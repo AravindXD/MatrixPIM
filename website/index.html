@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LUT Programming Visualization</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .steps { margin-top: 20px; }
+        .step-button { margin: 5px; padding: 10px; background-color: #2196F3; color: white; border: none; cursor: pointer; }
+        .step-button:hover { background-color: #0b7dda; }
+        .viewer { margin-top: 20px; border: 1px solid #ccc; height: 800px; }
+    </style>
+</head>
+<body>
+    <h1>LUT Programming Visualization</h1>
+    <div class='steps' id='step-buttons'>
+        <button class='step-button' onclick="document.getElementById('viewer').src='lut_state_001.html'">Step 1</button>
+    
+        <button class='step-button' onclick="document.getElementById('viewer').src='lut_state_002.html'">Step 2</button>
+        <button class='step-button' onclick="document.getElementById('viewer').src='lut_state_003.html'">Step 3</button></div>
+    <iframe id='viewer' class='viewer' src='lut_state_001.html' width='100%'></iframe>
+    <script>
+        // Auto-load the first step
+        window.onload = function() {
+            document.getElementById('viewer').src = 'lut_state_001.html';
+        };
+    </script>
+</body>
+</html>

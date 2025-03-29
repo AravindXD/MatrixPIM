@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LUT Programming Visualization</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .bank { margin-bottom: 20px; }
+        .bank-title { font-weight: bold; margin-bottom: 10px; }
+        .cores { display: flex; flex-wrap: wrap; }
+        .core { border: 1px solid #ccc; margin: 5px; padding: 10px; width: 150px; }
+        .core.programmed { background-color: #e6ffe6; }
+        .instruction { font-family: monospace; background-color: #f5f5f5; padding: 10px; margin-bottom: 20px; border-left: 5px solid #2196F3; }
+        .lut-data { font-family: monospace; font-size: 12px; margin-top: 10px; }
+        .core-type { font-weight: bold; color: #2196F3; }
+        h1 { color: #333; }
+        .data-cell { display: inline-block; width: 25px; height: 20px; text-align: center; background-color: #f0f0f0; margin: 1px; }
+    </style>
+</head>
+<body>
+    <h1>LUT Programming Visualization - Step 2</h1>
+    <div class='instruction'>PROG Core1 ADDER [0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f]</div>
+    <div class='bank'>
+        <div class='bank-title'>Bank 0</div>
+        <div class='cores'>
+            <div class='core programmed'>
+                <div>Core 0</div>
+                <div class='core-type'>MULTIPLIER</div>
+                <div class='lut-data'>
+                    <div class='data-cell'>0x00</div>
+                    <div class='data-cell'>0x01</div>
+                    <div class='data-cell'>0x02</div>
+                    <div class='data-cell'>0x03</div>
+                    <div class='data-cell'>0x04</div>
+                    <div class='data-cell'>0x05</div>
+                    <div class='data-cell'>0x06</div>
+                    <div class='data-cell'>0x07</div>
+                </div>
+            </div>
+            <div class='core programmed'>
+                <div>Core 1</div>
+                <div class='core-type'>ADDER</div>
+                <div class='lut-data'>
+                    <div class='data-cell'>0x08</div>
+                    <div class='data-cell'>0x09</div>
+                    <div class='data-cell'>0x0a</div>
+                    <div class='data-cell'>0x0b</div>
+                    <div class='data-cell'>0x0c</div>
+                    <div class='data-cell'>0x0d</div>
+                    <div class='data-cell'>0x0e</div>
+                    <div class='data-cell'>0x0f</div>
+                </div>
+            </div>
+            <div class='core '>
+                <div>Core 2</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core 3</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core 4</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core 5</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core 6</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core 7</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core 8</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core 9</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core a</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core b</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core c</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core d</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core e</div>
+                <div>Not Programmed</div>
+            </div>
+            <div class='core '>
+                <div>Core f</div>
+                <div>Not Programmed</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
